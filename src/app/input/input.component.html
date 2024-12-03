@@ -1,0 +1,34 @@
+<div class="container">
+  <!-- Input field at the top -->
+  <input type="text" id="editText" class="editText" [(ngModel)]="number" placeholder="Enter a number (1600-2100)" />
+  <!-- Template number displayed at the top right corner -->
+  <div class="templateNumber" *ngIf="template"    (mousedown)="onPressStart()"
+  (mouseup)="onPressEnd()"
+  (mouseleave)="onPressEnd()">
+    18KC1A{{ template }}
+  </div>
+
+  <!-- Keypad below the input field -->
+  <div class="keypad">
+    <div class="row">
+      <button (click)="onKeypadButtonClick(1)">1</button>
+      <button (click)="onKeypadButtonClick(2)">2</button>
+      <button (click)="onKeypadButtonClick(3)">3</button>
+    </div>
+    <div class="row">
+      <button (click)="onKeypadButtonClick(4)">4</button>
+      <button (click)="onKeypadButtonClick(5)">5</button>
+      <button (click)="onKeypadButtonClick(6)">6</button>
+    </div>
+    <div class="row">
+      <button (click)="onKeypadButtonClick(7)">7</button>
+      <button (click)="onKeypadButtonClick(8)">8</button>
+      <button (click)="onKeypadButtonClick(9)">9</button>
+    </div>
+    <div class="row">
+      <button (click)="onKeypadButtonClick('backspace')">⌫</button>
+      <button (click)="onKeypadButtonClick(0)">0</button>
+      <button (click)="onKeypadButtonClick('done')">Ok</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.editText {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+.templateNumber {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.keypad {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+button {
+  padding: 16px;
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #444;
+}
